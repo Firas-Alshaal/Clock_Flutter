@@ -97,11 +97,13 @@ class _TimerPage extends State<TimerPage> with TickerProviderStateMixin {
                               fontSize: 24),
                         ),
                       ),
-                      NumberPicker.integer(
-                          initialValue: _hour,
+                      NumberPicker(
+                          value: _hour,
+                          //initialValue: _hour,
                           minValue: 0,
                           maxValue: 23,
-                          listViewWidth: 60.0,
+                          itemWidth: 60.0,
+                          //listViewWidth: 60.0,
                           onChanged: (val) {
                             setState(() {
                               _hour = val;
@@ -123,11 +125,13 @@ class _TimerPage extends State<TimerPage> with TickerProviderStateMixin {
                               fontSize: 24),
                         ),
                       ),
-                      NumberPicker.integer(
-                          initialValue: _min,
+                      NumberPicker(
+                          //initialValue: _min,
+                          value: _min,
                           minValue: 0,
                           maxValue: 23,
-                          listViewWidth: 60.0,
+                          itemWidth: 60.0,
+                          //listViewWidth: 60.0,
                           onChanged: (val) {
                             setState(() {
                               _min = val;
@@ -149,11 +153,13 @@ class _TimerPage extends State<TimerPage> with TickerProviderStateMixin {
                               fontSize: 24),
                         ),
                       ),
-                      NumberPicker.integer(
-                          initialValue: _sec,
+                      NumberPicker(
+                          value: _sec,
+                          //initialValue: _sec,
                           minValue: 0,
                           maxValue: 23,
-                          listViewWidth: 60.0,
+                          itemWidth: 60.0,
+                          //listViewWidth: 60.0,
                           onChanged: (val) {
                             setState(() {
                               _sec = val;

@@ -286,9 +286,8 @@ class _AlarmPageState extends State<AlarmPage> {
       'alarm_notif',
       'alarm_notif',
       'Channel for Alarm notification',
-      priority: Priority.High,
       icon: 'codex_logo',
-      sound: 'a_long_cold_sting',
+      sound: '',
       largeIcon: 'codex_logo',
     );
 
